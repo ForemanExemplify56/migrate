@@ -18,8 +18,9 @@ func Factory(panelType, baseURL string, headers map[string]string) (SourcePanel,
 		return NewMarzbanPanel(baseURL, headers), nil
 	case "marzneshin":
 		return NewMarzneshinPanel(baseURL, headers), nil
+	case "3xui":
+		return NewThreeXUIPanel(baseURL, headers), nil
 	default:
 		return nil, fmt.Errorf("unsupported panel type: %s", panelType)
 	}
 }
-

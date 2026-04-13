@@ -6,6 +6,7 @@ A command-line tool for migrating users from various VPN management panels to Re
 
 - Marzban
 - Marzneshin
+- 3X-UI
 
 ## Overview
 
@@ -44,7 +45,7 @@ The tool can be configured using command-line flags or environment variables.
 
 | Flag                 | Env Variable       | Description                                                   | Default |
 | -------------------- | ------------------ | ------------------------------------------------------------- | ------- |
-| --panel-type         | PANEL_TYPE         | Source panel type (marzban or marzneshin)                     | marzban |
+| --panel-type         | PANEL_TYPE         | Source panel type (marzban, marzneshin or 3X-UI)              | marzban |
 | --panel-url          | PANEL_URL          | Source panel URL                                              |         |
 | --panel-username     | PANEL_USERNAME     | Source panel admin username                                   |         |
 | --panel-password     | PANEL_PASSWORD     | Source panel admin password                                   |         |

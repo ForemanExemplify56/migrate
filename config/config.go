@@ -3,7 +3,7 @@ package config
 import "github.com/alecthomas/kong"
 
 type Config struct {
-	PanelType         string `name:"panel-type" help:"Source panel type (e.g., marzban, marzneshin)" required:"true" default:"marzban" enum:"marzban,marzneshin" env:"PANEL_TYPE"`
+	PanelType         string `name:"panel-type" help:"Source panel type (e.g., marzban, marzneshin, 3xui)" required:"true" default:"marzban" enum:"marzban,marzneshin,3xui" env:"PANEL_TYPE"`
 	PanelURL          string `name:"panel-url" help:"Source panel URL" required:"true" env:"PANEL_URL"`
 	PanelUsername     string `name:"panel-username" help:"Source panel admin username" required:"true" env:"PANEL_USERNAME"`
 	PanelPassword     string `name:"panel-password" help:"Source panel admin password" required:"true" env:"PANEL_PASSWORD"`
